@@ -6,7 +6,7 @@
       },
       "descriptions": {
         "app_description": "Broadcast to channel members when an inventory item drops below base level",
-        "app_logo": "https://img.freepik.com/free-photo/barcode-machine-with-box_1150-5006.jpg?t=st=1740240194~exp=1740243794~hmac=1c1bd39a1b16cf70f4b09246b1d3dd5f0566269b55a2a854b1bad92ed93179a7&w=1060URL to the application logo.",
+        "app_logo": "https://cdn.brandfetch.io/id-Wd4a4TS/theme/dark/idCerXwXCa.svg?c=1bx1742623151377id64Mup7ac0_ViWH0a&t=1727787911932",
         "app_name": "Inventory Integration",
         "app_url": "https://inventory-monitor.onrender.com",
         "background_color": "#fff"
@@ -29,7 +29,7 @@
           "label": "interval",
           "type": "text",
           "required": true,
-          "default": "* * * * *"
+          "default": "*/5 * * * *"
         }
       ],
       "tick_url": "https://inventory-monitor.onrender.com/",
