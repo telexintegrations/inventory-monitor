@@ -1,0 +1,38 @@
+{
+    "data": {
+      "date": {
+        "created_at": "2025-02-22",
+        "updated_at": "2025-02-22"
+      },
+      "descriptions": {
+        "app_description": "Broadcast to channel members when an inventory item drops below base level",
+        "app_logo": "https://img.freepik.com/free-photo/barcode-machine-with-box_1150-5006.jpg?t=st=1740240194~exp=1740243794~hmac=1c1bd39a1b16cf70f4b09246b1d3dd5f0566269b55a2a854b1bad92ed93179a7&w=1060URL to the application logo.",
+        "app_name": "inventory Integration",
+        "app_url": "https://api-staging.thenebula.tech",
+        "background_color": "#fff"
+      },
+      "integration_category": "E-commerce & Retail",
+      "integration_type": "interval",
+      "is_active": true,
+  
+      "key_features": [
+        "Monitor inventory items that fall below a certain stock threshold"
+      ],
+      "permissions": {
+        "monitoring_user": {
+          "always_online": true,
+          "display_name": "Stock inventory Monitor"
+        }
+      },
+      "settings": [
+        {
+          "label": "interval",
+          "type": "text",
+          "required": true,
+          "default": "* * * * *"
+        }
+      ],
+      "tick_url": "",
+      "target_url": ""
+    }
+  }

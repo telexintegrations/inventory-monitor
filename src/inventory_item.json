@@ -1,0 +1,22 @@
+{
+    "inventory_items": [
+        {
+            "item_id": 1,
+            "item_name": "Laptop",
+            "category": "Electronics",
+            "quantity": 50,
+            "price": 999.99,
+            "supplier": "TechSupplier Inc.",
+            "date_added": "2023-10-01"
+        },
+        {
+            "item_id": 2,
+            "item_name": "Desk Chair",
+            "category": "Furniture",
+            "quantity": 150,
+            "price": 89.99,
+            "supplier": "OfficeSupplies Co.",
+            "date_added": "2023-09-15"
+        }
+    ]
+}
