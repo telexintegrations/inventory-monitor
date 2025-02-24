@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
+const updateinventory_1 = require("./updateinventory");
 const app = (0, express_1.default)();
 const port = 3000;
 app.get('/integrations', (req, res) => {
@@ -19,7 +20,9 @@ app.get('/integrations', (req, res) => {
         res.send(data);
     });
 });
-app.get('/', (req, res) => {
+(0, updateinventory_1.startInventoryUpdater)();
+app.get('/');
+app.get('/health', (req, res) => {
     res.json("Hello there");
 });
 app.listen(port, () => {

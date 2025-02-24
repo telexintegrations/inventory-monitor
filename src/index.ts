@@ -1,7 +1,8 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
-
+import { startInventoryUpdater } from  "./updateinventory"
+import { getLowStockItems } from './low_stock';
 const app = express();
 const port = 3000;
 
@@ -18,8 +19,12 @@ app.get('/integrations', (req, res) => {
     });
 });
 
+startInventoryUpdater();
 
-app.get('/', (req, res) => {
+app.get('/')
+
+
+app.get('/health', (req, res) => {
     res.json("Hello there")
 })
 

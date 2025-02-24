@@ -7,8 +7,8 @@
       "descriptions": {
         "app_description": "Broadcast to channel members when an inventory item drops below base level",
         "app_logo": "https://img.freepik.com/free-photo/barcode-machine-with-box_1150-5006.jpg?t=st=1740240194~exp=1740243794~hmac=1c1bd39a1b16cf70f4b09246b1d3dd5f0566269b55a2a854b1bad92ed93179a7&w=1060URL to the application logo.",
-        "app_name": "inventory Integration",
-        "app_url": "https://api-staging.thenebula.tech",
+        "app_name": "Inventory Integration",
+        "app_url": "https://inventory-monitor.onrender.com",
         "background_color": "#fff"
       },
       "integration_category": "E-commerce & Retail",
@@ -32,7 +32,7 @@
           "default": "* * * * *"
         }
       ],
-      "tick_url": "",
+      "tick_url": "https://inventory-monitor.onrender.com/",
       "target_url": ""
     }
   }
