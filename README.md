@@ -18,7 +18,7 @@ Clone the repository and navigate to the project directory:
 ```sh
 npm install
 
----
+```
 
 ## Usage
 
@@ -30,32 +30,35 @@ To start the application in development mode, run:
 ```sh
 npm run dev
 Build and Start
-To build the TypeScript files and start the application, use:
+```
 
-sh
-Copy
+# To build the TypeScript files and start the application, use:
+
+```sh
 npm run build:start
 Run Compiled JavaScript
-To directly run the compiled JavaScript version, execute:
 
-sh
-Copy
+```
+
+# To directly run the compiled JavaScript version, execute:
+
+``` sh
 npm run start
-Running in a Live Environment
-Ensure the app is built and then start it:
+```
+# Running in a Live Environment
+# Ensure the app is built and then start it:
 
-sh
-Copy
+``` sh
 npm run build && npm run start
-Integration
-Inventory Tracker integrates with Telex via a GET request to the following endpoint:
+``` 
+# Integration
+## Inventory Tracker integrates with Telex via a GET request to the following endpoint:
 
-🔗 Integration URL: https://inventory-monitor.onrender.com/integrations
+### 🔗 Integration URL: https://inventory-monitor.onrender.com/integrations
 
-The response will be in JSON format, structured as follows:
+### The response will be in JSON format, structured as follows:
 
-json
-Copy
+```json
 {
   "data": {
     "date": {
@@ -93,9 +96,10 @@ Copy
     "target_url": ""
   }
 }
-Telex Tick URL
-Telex makes a request to the following tick URL to trigger the monitoring process at regular intervals:
+```
+# Telex Tick URL
+# Telex makes a request to the following tick URL to trigger the monitoring process at regular intervals:
 
-🔗 Tick URL: https://inventory-monitor.onrender.com/tick
+# 🔗 Tick URL: https://inventory-monitor.onrender.com/tick
 
-This allows the system to check stock levels at the specified interval and send notifications accordingly.
+# This allows the system to check stock levels at the specified interval and send notifications accordingly.
