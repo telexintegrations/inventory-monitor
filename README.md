@@ -52,7 +52,8 @@ npm run start
 npm run build && npm run start
 ``` 
 # Integration
-## Inventory Tracker integrates with Telex via a GET request to the following endpoint:
+
+### Inventory Tracker integrates with Telex via a GET request to the following endpoint:
 
 ### 🔗 Integration URL: https://inventory-monitor.onrender.com/integrations
 
@@ -97,9 +98,10 @@ npm run build && npm run start
   }
 }
 ```
-# Telex Tick URL
-# Telex makes a request to the following tick URL to trigger the monitoring process at regular intervals:
 
-# 🔗 Tick URL: https://inventory-monitor.onrender.com/tick
+### Telex Tick URL
+### Telex makes a request to the following tick URL to trigger the monitoring process at regular intervals:
 
-# This allows the system to check stock levels at the specified interval and send notifications accordingly.
+### 🔗 Tick URL: https://inventory-monitor.onrender.com/tick
+
+### This allows the system to check stock levels at the specified interval and send notifications accordingly.
