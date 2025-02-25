@@ -7,6 +7,7 @@ const express_1 = __importDefault(require("express"));
 const path_1 = __importDefault(require("path"));
 const fs_1 = __importDefault(require("fs"));
 const updateinventory_1 = require("./updateinventory");
+const low_stock_1 = require("./low_stock");
 const app = (0, express_1.default)();
 const port = 3000;
 app.get('/integrations', (req, res) => {
@@ -21,7 +22,13 @@ app.get('/integrations', (req, res) => {
     });
 });
 (0, updateinventory_1.startInventoryUpdater)();
-app.get('/');
+app.post('/tick', (req, res) => {
+    const payload = req.body;
+    console.log('Tick received:', payload);
+    (0, low_stock_1.getLowStockItems)();
+    // Immediately acknowledge the tick request
+    res.status(202).json({ status: 'accepted' });
+});
 app.get('/health', (req, res) => {
     res.json("Hello there");
 });

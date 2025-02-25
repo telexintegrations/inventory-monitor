@@ -3,7 +3,7 @@
       "date": {
         "created_at": "2025-02-22",
         "updated_at": "2025-02-22"
-      },
+      },  
       "descriptions": {
         "app_description": "Broadcast to channel members when an inventory item drops below base level",
         "app_logo": "https://cdn.brandfetch.io/id-Wd4a4TS/theme/dark/idCerXwXCa.svg?c=1bx1742623151377id64Mup7ac0_ViWH0a&t=1727787911932",
@@ -32,7 +32,7 @@
           "default": "*/5 * * * *"
         }
       ],
-      "tick_url": "https://inventory-monitor.onrender.com/",
+      "tick_url": "https://inventory-monitor.onrender.com/tick",
       "target_url": ""
     }
   }

@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
-import { startInventoryUpdater } from  "./updateinventory"
+import { startInventoryUpdater } from "./updateinventory"
 import { getLowStockItems } from './low_stock';
 const app = express();
 const port = 3000;
@@ -21,7 +21,18 @@ app.get('/integrations', (req, res) => {
 
 startInventoryUpdater();
 
-app.get('/')
+app.post('/tick', (req, res) => {
+    const payload = req.body;
+    console.log('Tick received:', payload);
+
+    getLowStockItems()
+    // Immediately acknowledge the tick request
+    res.status(202).json({ status: 'accepted' });
+
+
+});
+
+
 
 
 app.get('/health', (req, res) => {

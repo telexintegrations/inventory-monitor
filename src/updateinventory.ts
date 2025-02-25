@@ -56,7 +56,7 @@ function updateRandomItemQuantity(): void {
 }
 
 // Run the function every 8 hours (28800000 ms)
-setInterval(updateRandomItemQuantity, 8 * 60 * 60 * 1000);
+// setInterval(updateRandomItemQuantity, 8 * 60 * 60 * 1000);
 // setInterval(updateRandomItemQuantity, 60 * 1000);
 
 // Initial run
@@ -64,6 +64,6 @@ updateRandomItemQuantity();
 
 
 export function startInventoryUpdater() {
-    setInterval(updateRandomItemQuantity, 60 * 1000); // Runs every 1 minute for testing
+    setInterval(updateRandomItemQuantity, 8 * 60 * 60 * 1000); // Runs every 8 hours
     updateRandomItemQuantity(); // Initial run
 }
